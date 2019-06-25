@@ -11,7 +11,7 @@
           </div>
           <div class="col-sm-1">
               <div class="text-center feature-page-nave">
-                  <a href="practice_management.html" title="Practice Management"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  <a routerLink="/features/practice-management" title="Practice Management"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
               </div>
           </div>
       </div>
@@ -19,21 +19,8 @@
 </section>
 
 <section class="single-feature-section">
-  <aside class="section-padding">
-      <div class="single-feature-list">
-          <div class="h4 text-regular">Features</div>
-              <ul>
-                  <li><a class="active" href="case_management.html">Case Management</a></li>
-                  <li><a href="practice_management.html">Practice Management</a></li>
-                  <li><a href="document_management.html">Document Management</a></li>
-                  <li><a href="contact_management.html">Contact Management</a></li>
-                  <li><a href="billing_management.html">Billing Management</a></li>
-                  <li><a href="finance_management.html">Finance Management</a></li>
+  <app-features-sidebar></app-features-sidebar>
 
-                  <li><a href="features.html"><strong>See All Features</strong></a></li>
-              </ul>
-          </div>
-  </aside>
   <main>
       <section class="single-feature-content section-padding">
           <div class="container-fluid">
@@ -48,7 +35,7 @@
                   </div>
                   <div class="col-sm-12 col-lg-6">
                       <div class="text-lg-right text-center">
-                          <img src="images/features/single-feature-1.jpg" alt="Single Feature">
+                          <img src="assets/images/features/single-feature-1.jpg" alt="Single Feature">
                       </div>
                       
                   </div>
@@ -60,7 +47,7 @@
               <div class="row">
                   <div class="col-sm-12 col-lg-6">
                       <div class="text-lg-left text-center">
-                          <img src="images/features/single-feature-2.png" alt="Single Feature">
+                          <img src="assets/images/features/single-feature-2.png" alt="Single Feature">
                       </div>
                   </div>
                   <div class="col-sm-12 col-lg-6">
@@ -86,7 +73,7 @@
       <div class="h5 text-center text-regular mb-5">Hoxro LMS is the world's most intelligent cloud-based legal software designed to help you improve your productivity, performance
       & profitability.</div>
       <div class="text-center">
-          <a class="btn btn-rounded-secondary text-white" href="features.html">Browse all Features</a>
+          <a class="btn btn-rounded-secondary text-white" routerLink="/features/">Browse all Features</a>
       </div>
   </div>
 </section>

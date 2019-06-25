@@ -2,7 +2,7 @@
 import 'rxjs/operator/map';
 import 'rxjs/operator/mergeMap'; */
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { filter, map, mergeMap } from 'rxjs/operators'; 
@@ -14,6 +14,7 @@ import { filter, map, mergeMap } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
   title = "Hoxro | Legal Management Software";
+
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
@@ -25,9 +26,9 @@ export class AppComponent implements OnInit {
       if (event instanceof NavigationEnd) {
         //console.log(this.activatedRoute.firstChild.data.value.title);
 
-        this.titleService.setTitle(this.activatedRoute.firstChild.data.value.title);
+        //this.titleService.setTitle(this.activatedRoute.firstChild.data.value.title);
         
-        $("html, body").animate({ scrollTop: 0 }, "slow");
+        //$("html, body").animate({ scrollTop: 0 }, "slow");
       }
   });
   }

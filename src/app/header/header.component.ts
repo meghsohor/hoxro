@@ -13,9 +13,9 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const dropdownTogglers = document.querySelectorAll('.dropdown-toggle');
-    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navLinks: any = document.querySelectorAll('.nav-link');
+    const dropdownTogglers:any = document.querySelectorAll('.dropdown-toggle');
+    const navbarToggler:any = document.querySelector('.navbar-toggler');
 
     document.addEventListener('click', function (e) {
       //console.log((e.target.classList).includes('dropdown-toggle'));
@@ -44,8 +44,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     });
 
     /*------------ Following code is for Fixed header --------------*/
-    const nav = document.querySelector('.header-nav-section');
-    let topOfNav = nav.offsetTop;
+    const nav:any = document.querySelector('.header-nav-section');
+    let topOfNav:any = nav.offsetTop;
 
     function fixNav() {
         if (window.scrollY >= topOfNav) {
@@ -53,7 +53,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
             document.body.classList.add('fixed-nav');
         } else {
             document.body.classList.remove('fixed-nav');
-            document.body.style.paddingTop = 0;
+            document.body.style.paddingTop = '0';
         }
     }
 

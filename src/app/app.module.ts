@@ -13,8 +13,8 @@ import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { FeaturesComponent } from './features/features.component';
-import { CaseComponent } from './features/case/case.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+
 
 @NgModule({
   declarations: [
@@ -29,8 +29,7 @@ import { CaseComponent } from './features/case/case.component';
     ContactComponent,
     SignInComponent,
     SignUpComponent,
-    FeaturesComponent,
-    CaseComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

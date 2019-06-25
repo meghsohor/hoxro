@@ -1,0 +1,14 @@
+:host {
+    width: 33%;
+
+    aside {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    :host {
+        order: 1;
+        width: 100%;
+    }
+}
