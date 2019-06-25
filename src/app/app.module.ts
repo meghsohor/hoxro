@@ -6,13 +6,31 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { PartialPricingComponent } from './partials/pricing/pricing.component';
+import { AboutComponent } from './about/about.component';
+import { WhyHoxroComponent } from './why-hoxro/why-hoxro.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { ContactComponent } from './contact/contact.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { FeaturesComponent } from './features/features.component';
+import { CaseComponent } from './features/case/case.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    PartialPricingComponent,
+    AboutComponent,
+    WhyHoxroComponent,
+    PricingComponent,
+    ContactComponent,
+    SignInComponent,
+    SignUpComponent,
+    FeaturesComponent,
+    CaseComponent,
   ],
   imports: [
     BrowserModule,
