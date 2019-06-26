@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HoxroWrapperComponent } from './hoxro-wrapper.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     SignInComponent,
     SignUpComponent,
     NotFoundComponent,
+    HoxroWrapperComponent,
   ],
   imports: [
     BrowserModule,
