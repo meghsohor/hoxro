@@ -17,9 +17,9 @@ const routes: Routes = [
     path: '',
     component: HoxroWrapperComponent,
     children: [
-      { path: '', redirectTo: '/home', pathMatch: 'full' },
+      /* { path: '', redirectTo: '', pathMatch: 'full' }, */
       {
-        path: 'home',
+        path: '',
         component: HomeComponent,
         data: { title: 'Case Management System | Legal Software by Hoxro' }
       },
