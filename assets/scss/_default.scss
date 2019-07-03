@@ -1,0 +1,220 @@
+/* General
+-------------------------------------------------------------- */
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body { 
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 400; 
+    font-size: 14px; 
+    color: $default_color;
+	line-height: 1.5; 
+	-webkit-font-smoothing: antialiased; 
+	text-rendering: optimizeLegibility; 
+    min-height: 100vh;
+    position: relative;
+
+}
+body.loading {
+    overflow: hidden;
+    height: 100vh;
+}
+img {
+	max-width: 100%; 
+	vertical-align: middle; 
+    -ms-interpolation-mode: bicubic;
+    
+    &.img-shadow {
+        box-shadow: 0px 25px 30px -10px rgba(0, 0, 0, 0.25), 0px -2px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	transition : $transition3s;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+}
+
+.v-center {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-control:focus {
+    border-color: $secondary_color;
+    box-shadow: none;
+}
+
+/* Iframe
+-------------------------------------------------------------- */
+.frame-content {
+    height: 0;
+    overflow: hidden;
+    padding-top: 30px;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.frame-content iframe, .frame-content object, .frame-content embed {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* buttons
+-------------------------------------------------------------- */
+.buttons {
+    display: flex;
+
+    .btn {
+        //font-size: 14px;
+
+        &:first-child {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.btn-theme {
+    color: #FFF;
+    background-color: $primary_color;
+    border-color: $primary_color;
+
+    &:hover {
+        color: #FFF;
+        background-color: darken($primary_color, 5);
+        border-color: darken($primary_color, 10);
+    }
+}
+.btn-rounded-outline {
+    color: #FFF;
+    background: transparent;
+    border-color: #FFF;
+    padding: 0.5rem 1rem;
+    border-width: 2px;
+    border-radius: 20px;
+    min-width: 150px;
+
+    &:hover {
+        color: #FFF;
+        background: $secondary_color;
+        border-color: darken($secondary_color, 5);
+    }
+}
+
+.btn-rounded-secondary {
+    color: #FFF;
+    background: $secondary_color;
+    border-color: $secondary_color;
+    padding: 0.5rem 1rem;
+    border-width: 2px;
+    border-radius: 20px;
+    min-width: 150px;
+
+    &:hover {
+        color: $secondary_color;
+        background: transparent;
+        border-color: darken($secondary_color, 5);
+    }
+}
+
+/* Section styles
+-------------------------------------------------------------- */
+.section-padding {
+    padding: 8vh 0;
+}
+.section-bg-primary {
+    background: $primary_color;
+
+    * {
+        color: #FFF;
+    }
+
+    .buttons {
+        justify-content: center;
+        margin-top: 3rem;
+    }
+}
+.parallax-section {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($primary_color, 0.7);
+    }
+
+    .parallax-container {
+        z-index: 1;
+        position: relative;
+        color: #FFF;
+    }
+}
+.section-title {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.section-title-hx {
+    padding-bottom: 1rem;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 40px;
+        background: $secondary_color;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.section-bg-grey {
+    background: $light_grey;
+}
+
+
+
+
+
+/* Media Queries
+-------------------------------------------------------------- */
+@media (max-width: 576px) {
+    .buttons {
+        justify-content: space-around;
+    }
+}
+@media (min-width: 992px) {
+    .text-lg-right {
+        text-align: right !important;
+    }
+    .text-lg-left {
+        text-align: left !important;
+    }
+}

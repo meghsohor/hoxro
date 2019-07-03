@@ -1,0 +1,64 @@
+//Color Variables
+$default_color : #4c4c4c;
+$primary_color : #0b4996;
+$secondary_color : #00baff;
+$alt_color : #517f8e;
+$light_grey : #f5f5f5;
+$grey_color : #454545;
+
+$top_header_text : #a6a6a6;
+$top_header_bg : #454545;
+
+$footer_text_color : #d9d9d9;
+$footer_bg_color : #4e4e4e;
+
+//Transition Variables
+$transition3s : all 0.3s ease-in-out;
+
+/* Text
+-------------------------------------------------------------- */
+.text-light {
+    font-weight: 300 !important;
+    color: inherit !important;
+}
+.text-regular {
+    font-weight: 400 !important;
+}
+.text-medium {
+    font-weight: 500 !important;
+}
+.text-bold {
+    font-weight: 600 !important;
+}
+
+
+//Overrides
+.text-primary {
+    color: $primary_color !important;
+}
+.text-info {
+    color: $secondary_color !important;
+}
+.text-alt {
+    color: $alt_color !important;
+}
+/*----------- Bootstrap Buttons --------------*/
+.btn-primary {
+    background: $primary_color !important;
+    border-color: $primary_color !important;
+
+    &:hover, &:active, &.active {
+        background: darken($primary_color, 5) !important;
+        border-color: $primary_color !important
+    }
+}
+
+.btn-info {
+    background: $secondary_color !important;
+    border-color: $secondary_color !important;
+
+    &:hover, &:active, &.active {
+        background: darken($secondary_color, 5) !important;
+        border-color: $secondary_color !important
+    }
+}
